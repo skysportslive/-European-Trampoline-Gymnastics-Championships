@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL SPORTS LIVE TV 2026 - Free Sports Streaming</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --primary: #f31246;
+    --bg: #f2f2f2;
+    --white: #ffffff;
+    --text: #333;
+}
+
+/* ===== Reset & Base ===== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans',sans-serif;}
+body{background:linear-gradient(-45deg,#ff004c,#0f2027,#203a43,#2c5364);background-size:400% 400%;animation:gradientBG 12s ease infinite;color:var(--text);line-height:1.6;}
+@keyframes gradientBG{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+/* ===== Header ===== */
+header{background:var(--white);padding:40px 0;text-align:center;border-bottom:4px solid var(--primary);}
+.site-title{font-size:45px;font-family:'Roboto',sans-serif;font-weight:700;color:#111;text-transform:uppercase;}
+header p{margin-top:10px;}
+
+/* ===== Navigation ===== */
+nav{background:#222;position:sticky;top:0;z-index:1000;}
+.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:center;}
+.nav-container a{color:white;padding:15px 25px;text-decoration:none;font-weight:bold;font-size:14px;text-transform:uppercase;}
+.nav-container a:hover{background:var(--primary);color:#000;}
+
+/* ===== Search ===== */
+.search-wrapper{background:#fff;padding:30px 20px;text-align:center;border-bottom:1px solid #ddd;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+.search-box-container{max-width:700px;margin:0 auto;position:relative;}
+.top-search-input{width:100%;padding:15px 25px;border:2px solid var(--primary);border-radius:50px;font-size:18px;outline:none;}
+#search-status{margin-top:15px;font-weight:bold;color:var(--primary);display:none;}
+
+/* ===== Layout ===== */
+.wrapper{max-width:1200px;margin:30px auto;display:grid;grid-template-columns:1fr 350px;gap:30px;padding:0 20px;}
+.blog-feed{display:flex;flex-direction:column;gap:40px;}
+
+/* ===== Post Styling ===== */
+.post{background:var(--white);border:1px solid #ddd;border-radius:8px;overflow:hidden;display:none;position:relative;transition:0.3s;}
+.post-image-container{position:relative;}
+.post-img{width:100%;display:block;object-fit:cover;height:450px;border-bottom:3px solid var(--primary);}
+.live-badge{position:absolute;top:10px;left:10px;background:red;color:#fff;padding:5px 12px;font-weight:bold;font-size:12px;border-radius:4px;animation:blink 1s infinite;z-index:7;}
+@keyframes blink{0%,50%,100%{opacity:1;}25%,75%{opacity:0;}}
+.viewer-counter{position:absolute;top:10px;right:10px;background:rgba(0,0,0,0.6);color:#fff;padding:4px 10px;font-size:12px;border-radius:4px;font-weight:bold;z-index:7;}
+.play-btn-container{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;cursor:pointer;z-index:5;}
+.play-btn-container i{font-size:70px;color:red;animation:pulse 1.5s infinite;}
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.2);}100%{transform:scale(1);}}
+.loader{position:absolute;width:50px;height:50px;border:6px solid #eee;border-top:6px solid red;border-radius:50%;display:none;animation:spin 1s linear infinite;}
+@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
+/* ===== Post Text ===== */
+.post-body{padding:20px 30px;}
+.post-title{font-size:24px;font-weight:700;color:#111;text-decoration:none;display:block;margin-bottom:10px;}
+.post-desc{margin-bottom:10px;}
+.btn-link{display:inline-block;background:var(--primary);color:#000;padding:10px 25px;text-decoration:none;font-weight:800;border-radius:4px;}
+
+/* ===== Load More ===== */
+.load-more-container{text-align:center;margin-top:40px;margin-bottom:40px;}
+#loadMoreBtn{background:#222;color:white;padding:15px 50px;border:none;font-weight:bold;cursor:pointer;border-radius:50px;font-size:16px;transition:0.3s;}
+#loadMoreBtn:hover{background:var(--primary);color:#000;}
+
+/* ===== Sidebar ===== */
+.sidebar{display:flex;flex-direction:column;gap:30px;}
+.widget{background:var(--white);padding:25px;border:1px solid #ddd;border-radius:8px;}
+.widget-title{font-size:18px;font-weight:700;border-bottom:2px solid #111;padding-bottom:10px;margin-bottom:20px;text-transform:uppercase;}
+
+/* ===== Footer ===== */
+footer{background:#111;color:#888;padding:60px 0;text-align:center;}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){.wrapper{grid-template-columns:1fr;}.post-img{height:250px;}.site-title{font-size:30px;}}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="site-title">ALL SPORTS LIVE TV 2026</div>
+    <p>Providing Best Content, Reviews & News</p>
+</header>
+
+<nav>
+    <div class="nav-container">
+        <a href="#">SPORTS LIVE</a>
+        <a href="#">EVENT LIVE</a>
+        <a href="#">FESTIVAL LIVE</a>
+        <a href="#">NEWS LIVE</a>
+        <a href="#">ALL SOCIAL MEDIA LIVE</a>
+    </div>
+</nav>
+
+<div class="search-wrapper">
+    <div class="search-box-container">
+        <input type="text" id="site-search" class="top-search-input" placeholder="Search Live Content..." onkeyup="liveSearch()">
+        <div id="search-status"></div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <main>
+        <div class="blog-feed" id="blog-feed">
+
+            <!-- Post 1 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://images.nbcolympics.com/sites/default/files/2026-02/nbcothumbalt_opening_ceremony_stream_MiCo.jpg" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="5432">5,432 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://www.facebook.com/AllsportsLiveStreamTv2026/')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">Paralympics 2026 Opening Ceremony Live</a>
+                    <p class="post-desc">The 2026 Milan Cortina Paralympic Winter Games officially begin with the opening ceremony...</p>
+                  
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://s1.ticketm.net/dam/a/2c1/d8040b96-af04-4444-b277-ddc2972492c1_RETINA_PORTRAIT_3_2.jpg" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="4210">4,210 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://kirujh.com/af?o=a2f147972b67fa73d04985c5717ac25d')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">The Premier International Bull Riding</a>
+                    <p class="post-desc">Professional Bull Riders (PBR) is the premier international bull riding organization...</p>
+                   
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://statics-maker.llt-services.com/mlr/images/2026/02/19/medium-wp/0d11c015-98f4-49f3-a4c2-c7b3f6ccd3cd-744.webp" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="3890">3,890 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://kirujh.com/af?o=a2f147972b67fa73d04985c5717ac25d')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">Major League Rugby (MLR)</a>
+                    <p class="post-desc">The league comprises 6 teams. While operating outside the governance and oversight...</p>
+                
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/ap25110671493937.jpg?q=w_1110,c_fill" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="7120">7,120 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://kirujh.com/af?o=a2f147972b67fa73d04985c5717ac25d')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">Formula 1: Saudi Arabian Grand Prix</a>
+                    <p class="post-desc">The Saudi Arabian Grand Prix is a premier Formula 1 night race held at the Jeddah Corniche Circuit...</p>
+                  
+                </div>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://i.ytimg.com/vi/9oQpuL4PQlM/hq720.jpg" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="6250">6,250 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://kirujh.com/af?o=a2f147972b67fa73d04985c5717ac25d')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">UFC 326: Holloway vs Oliveira 2</a>
+                    <p class="post-desc">UFC 326: Holloway vs Oliveira 2 is scheduled for Saturday, March 7, 2026...</p>
+                
+                </div>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="post">
+                <div class="post-image-container">
+                    <img src="https://images.unsplash.com/photo-1601597118501-b7b16dc6b2d4" class="post-img">
+                    <span class="live-badge">LIVE</span>
+                    <span class="viewer-counter" data-count="4980">4,980 watching</span>
+                    <div class="play-btn-container" onclick="playVideo(this,'https://kirujh.com/af?o=a2f147972b67fa73d04985c5717ac25d')">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a href="#" class="post-title">FUCK YOU BALL</a>
+                    <p class="post-desc">Catch the live coverage of the finals, featuring top teams from around the world...</p>
+               
+                </div>
+            </article>
+
+        </div>
+
+        <div class="load-more-container">
+            <button id="loadMoreBtn">LOAD MORE CONTENT</button>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="widget">
+            <div class="widget-title">WATCH ALL SPORTS LIVE STREM FOR FREE</div>
+            <p style="font-size: 14px; color: #666;">This is a professional blog portal where you can find all the latest links and news in one place.</p>
+        </div>
+
+        <div class="widget">
+            <div class="widget-title">Follow Us</div>
+            <div style="display:flex; gap:20px; font-size:24px; justify-content:center;">
+                <a href="https://www.facebook.com/AllsportsLiveStreamTv2026" style="color:#1877f2"><i class="fab fa-facebook"></i></a>
+                <a href="APNAR_TELEGRAM_LINK" style="color:#0088cc"><i class="fab fa-telegram"></i></a>
+                <a href="APNAR_YOUTUBE_LINK" style="color:#ff0000"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2026 OFFICIAL ALL SPORTS LIVE TV 📺. All Rights Reserved.</p>
+</footer>
+
+<script>
+// ===== Load More =====
+let currentItems = 3; 
+const posts = Array.from(document.querySelectorAll('.post'));
+const loadMoreBtn = document.querySelector('#loadMoreBtn');
+
+function displayPosts() {
+    posts.forEach((post,index)=>{
+        if(index < currentItems){ post.style.display='block'; }
+        else{ post.style.display='none'; }
+    });
+    if(currentItems >= posts.length){ loadMoreBtn.style.display='none'; }
+    else{ loadMoreBtn.style.display='inline-block'; }
+}
+displayPosts();
+loadMoreBtn.addEventListener('click',()=>{
+    currentItems += 2;
+    displayPosts();
+});
+
+// ===== Live Search =====
+function liveSearch(){
+    let filter = document.getElementById('site-search').value.toUpperCase();
+    let status = document.getElementById('search-status');
+    let foundCount = 0;
+
+    if(filter !== ""){
+        loadMoreBtn.style.display='none';
+        posts.forEach(post=>{
+            let title = post.querySelector('.post-title').innerText.toUpperCase();
+            if(title.indexOf(filter) > -1){ post.style.display='block'; foundCount++; }
+            else{ post.style.display='none'; }
+        });
+        status.style.display='block';
+        status.innerText = foundCount + " results found for '" + filter.toLowerCase() + "'";
+    } else{
+        status.style.display='none';
+        displayPosts();
+    }
+}
+
+// ===== Play Button =====
+function playVideo(container, link){
+    const btn = container.querySelector('.fa-circle-play');
+    const loader = container.querySelector('.loader');
+    btn.style.display = 'none';
+    loader.style.display = 'block';
+    setTimeout(()=>{
+        loader.style.display = 'none';
+        window.location.href = link;
+    },2000);
+}
+
+// ===== Viewer Counter Auto Update =====
+function updateViewers(){
+    document.querySelectorAll('.viewer-counter').forEach(vc=>{
+        let count = parseInt(vc.getAttribute('data-count')) || parseInt(vc.innerText.replace(/\D/g,''));
+        let change = Math.floor(Math.random()*41)+10; 
+        if(Math.random() < 0.5) change *= -1; 
+        count += change;
+        if(count < 1) count = 1;
+        vc.setAttribute('data-count', count);
+        vc.innerText = count.toLocaleString() + " watching";
+    });
+}
+setInterval(updateViewers, 1000);
+</script>
+
+</body>
+</html>
